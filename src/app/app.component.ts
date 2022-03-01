@@ -11,4 +11,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'net-ninja-app';
+
+  ninja = {
+    name: 'Ryu',
+    belt: 'Red',
+  };
+
+  yell(e: any) {
+    console.log(e);
+  }
 }

@@ -5,3 +5,12 @@
 <!-- property binding -->
 <input [value]="myString" />
 <input [required]="myBoolean" />
+<button (click)="alertMe('I like food')"></button>
+
+<!-- 2-way data binding -->
+<input [(ngModel)]="ninja.name" type="text" name="text" id="text" />
+<p>{{ ninja.name }}</p>
+<p>{{ ninja.belt }}</p>
+
+<!-- emit event -->
+<button (click)="fireYellEvent($event)">Click me</button>
